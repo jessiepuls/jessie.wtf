@@ -13,15 +13,23 @@ SectionPagesMenu = ["main", "social"]
 
 [params.header]
 headertitle = "Hello!"
-headerdiscription = "Please click buttons. They do nothing."
-btnbluetext = "GitHub"
-btnbluehref = "https://github.com/jessiepuls"
+headerdescription = "Please click buttons. They do nothing."
 
-[params.main]
-contentOneTitle = "I don't even know"
-contentOneBody = "Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff "
-contentTwoTitle = "We'll put something over here.."
-contentTwoBody = "Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff "
+[[params.header.button]]
+text = "Todo"
+href = "/todo"
+
+[[params.header.button]]
+text = "This could probably go somewhere"
+href = ""
+
+[[params.main.module]]
+title = "Some content module"
+body = "Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff"
+
+[[params.main.module]]
+title = "Some other content module"
+body = "Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff Other Stuff"
 
 [params.footer]
 email = "jessiepuls@gmail.com"
