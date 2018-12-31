@@ -16,8 +16,8 @@ headertitle = "Hello!"
 headerdescription = "Please click buttons. They do nothing."
 
 [[params.header.button]]
-text = "Todo"
-href = "/todo"
+text = "See this thing on github"
+href = "https://github.com/jessiepuls/jessie.wtf"
 
 [[params.header.button]]
 text = "This could probably go somewhere"
