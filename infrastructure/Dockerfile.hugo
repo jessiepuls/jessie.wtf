@@ -4,7 +4,7 @@ USER root
 
 # Apt all the things
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y python curl hugo
+RUN apt-get install -y python curl hugo openssh-client
 
 
 # Install pip
