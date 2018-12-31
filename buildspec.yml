@@ -1,6 +1,19 @@
 version: 0.2
 
 phases:
+    hacky_git_init:
+        commands:
+            - mkdir -p ~/.ssh
+            - echo "$build_ssh_key" > ~/.ssh/id_rsa
+            - chmod 600 ~/.ssh/id_rsa
+            - ssh-keygen -F github.com || ssh-keyscan github.com >>~/.ssh/known_hosts
+            - git config --global url."git@github.com:".insteadOf "https://github.com/"
+            - git init
+            - git remote add origin git@github.com:jessiepuls/jessie.wtf.git
+            - git fetch
+            - git checkout -t origin/master
+            - git submodule init
+            - git submodule update --recursive
     build:
         commands:
             - echo "Building site"
