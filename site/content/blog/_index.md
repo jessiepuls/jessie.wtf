@@ -1,6 +1,7 @@
 +++
 title = "Pretend there's a blog"
 layout = "single-para"
+showheader = true
 +++
 
 Alright figuring out how to do some things with a staticly generated site.
