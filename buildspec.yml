@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-    hacky_git_init:
+    install:
         commands:
             - mkdir -p ~/.ssh
             - echo "$build_ssh_key" > ~/.ssh/id_rsa
