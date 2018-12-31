@@ -1,4 +1,44 @@
-baseURL = "http://www.jessie.wtf/"
+baseURL = "/"
+author = "Jessie Puls"
+title = "Making a test thing"
+theme = "simple-hugo-theme"
 languageCode = "en-us"
-title = "jessie.wtf"
-theme = "foundation"
+
+enableRobotsTXT = true
+SectionPagesMenu = ["main", "social"]
+
+# [params.meta]
+# description = "Hugo and Foundation mobile enabled theme."
+# keywords = "foundation6, hugo, responsive, theme, mobile, developer"
+
+[params.header]
+headertitle = "Hello!"
+headerdiscription = "Please click buttons. They do nothing."
+btnbluetext = "GitHub"
+btnbluehref = "https://github.com/jessiepuls"
+
+[params.main]
+contentOneTitle = "I don't even know"
+contentOneBody = "Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff "
+contentTwoTitle = "We'll put something over here.."
+contentTwoBody = "Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff Stuff "
+
+[params.footer]
+email = "jessiepuls@gmail.com"
+
+[[menu.main]]
+name = "Blog"
+url = "/blog"
+
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+
+[[menu.social]]
+name = "Twitter"
+url = "http://twitter.com/jessiepuls"
+
+[[menu.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/jessiepuls/"
+
