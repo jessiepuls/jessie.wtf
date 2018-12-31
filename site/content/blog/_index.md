@@ -8,6 +8,7 @@ Alright figuring out how to do some things with a staticly generated site.
 These are my repos:
 
 Site: https://github.com/jessiepuls/jessie.wtf
+
 Theme: https://github.com/jessiepuls/simple-hugo-theme
 
 
