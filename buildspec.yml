@@ -7,7 +7,7 @@ phases:
             - cd site
             - hugo
             - echo "S3 Upload Beginning"
-            - aws s3 sync public/ s3://jessie.wtf/ --region us-east-1 --delete --acl public-read
+            - aws s3 sync public/ s3://www.jessie.wtf/ --region us-east-1 --delete --acl public-read
             - echo "S3 Upload Complete"
 
     post_build:
