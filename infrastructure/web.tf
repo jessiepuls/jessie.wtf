@@ -21,3 +21,9 @@ EOF
     error_document = "404.html"
   }
 }
+
+resource "aws_acm_certificate" "certificate" {
+  domain_name       = "*.${var.root_domain_name}"
+  validation_method = "EMAIL"
+  subject_alternative_names = ["${var.root_domain_name}"]
+}
