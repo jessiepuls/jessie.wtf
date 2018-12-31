@@ -4,7 +4,7 @@ phases:
     install:
         # We're going to do something real stupid here until I decide how to deal with the template and code pipeline's inability to understand submodules
         commands:
-            - curl https://github.com/jessiepuls/simple-hugo-theme/archive/master.zip output simple-hugo-theme.zip
+            - curl https://github.com/jessiepuls/simple-hugo-theme/archive/master.zip --output simple-hugo-theme.zip
             - cp -r simple-hugo-theme-master/* site/themes/simple-hugo-theme/
     build:
         commands:
