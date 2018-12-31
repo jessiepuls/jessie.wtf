@@ -2,17 +2,10 @@ version: 0.2
 
 phases:
     install:
+        # We're going to do something real stupid here until I decide how to deal with the template and code pipeline's inability to understand submodules
         commands:
-            - mkdir -p ~/.ssh
-            - echo "$build_ssh_key" > ~/.ssh/id_rsa
-            - chmod 600 ~/.ssh/id_rsa
-            - ssh-keygen -F github.com || ssh-keyscan github.com >>~/.ssh/known_hosts
-            - git init
-            - git remote add origin git@github.com:jessiepuls/jessie.wtf.git
-            - git fetch
-            - git checkout -t origin/master
-            - git submodule init
-            - git submodule update --recursive
+            - curl https://github.com/jessiepuls/simple-hugo-theme/archive/master.zip output simple-hugo-theme.zip
+            - cp -r simple-hugo-theme-master/* site/themes/simple-hugo-theme/
     build:
         commands:
             - echo "Building site"
