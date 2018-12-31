@@ -1,0 +1,15 @@
+FROM ubuntu:16.04
+
+USER root
+
+# Apt all the things
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y python curl hugo
+
+
+# Install pip
+RUN curl -sO https://bootstrap.pypa.io/get-pip.py
+RUN python get-pip.py
+
+# Install AWS CLI
+RUN pip install awscli
